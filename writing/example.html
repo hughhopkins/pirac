@@ -8,27 +8,44 @@
   <meta name="author" content="Hugh Hopkins">
   <link href="../assets/css/bootstrap.css" rel="stylesheet">
   <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="../assets/css/site.css" rel="stylesheet">
   <link rel="shortcut icon" href="../assets/img/faviconX.png">
 </head>
-<body>
+<body class="writing-page">
 
-  <div class="navbar navbar-inverse">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="brand" href="/">Hugh Hopkins</a>
-        <ul class="nav pull-right">
-          <li><a href="http://uk.linkedin.com/in/hughhopkins/" target="_blank" title="My LinkedIn profile"><img src="../assets/img/linkedin.svg" width="20" height="20"></a></li>
-          <li><a href="https://x.com/hughhopkins" target="_blank" title="My X/Twitter feed"><img src="../assets/img/twitter.svg" width="20" height="20"></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+  
+          <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+              <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="brand" href="#">Hugh Hopkins</a>
+                  </li>
+                </ul>
+                <ul class="nav pull-right">
+                      <li><a href="http://uk.linkedin.com/in/hughhopkins/" target="_blank" title="My LinkedIn profile"><img src="../assets/img/linkedin.svg" width="20" height="20"  onclick="_gs('event', 'Clicked LinkedIn Header');"></a></li>
+                      <li><a class="external" href="https://x.com/hughhopkins" target="_blank" title="My X/Twitter feed"><img src="../assets/img/twitter.svg" width="20" height="20" onclick="_gs('event', 'Clicked @hughhopkins Header');"></a></li>
+                  </ul>
+              </div><!--/.nav-collapse -->
+            </div><!-- /.navbar-inner -->
+          </div><!-- /.navbar -->
+  
+        </div> <!-- /.container -->
+      </div><!-- /.navbar-wrapper -->
 
   <div class="container">
     <div class="row">
       <div class="span8 offset2">
         <div class="page-header">
-          <h1>Hello World</h1>
+          <h2 class="featurette-heading">Hello World</h2>
           <p class="muted">30 Aug 2025</p>
         </div>
 
